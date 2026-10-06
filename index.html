@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KS-3-24-M-A Studio - разработка и размещение сайтов в интернете.">
+  <title>KS-3-24-M-A Studio - сайты и хостинг</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">KS-3-24-M-A Studio</a>
+
+      <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Разработка и размещение сайтов</div>
+          <h1>Сайт от идеи<br>до публикации</h1>
+          <p>
+            Создаём небольшие современные сайты, размещаем их в интернете
+            и помогаем с дальнейшим обслуживанием.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Услуги</a>
+            <a class="btn btn-outline" href="#contacts">Связаться</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="images/hosting.svg" alt="Размещение сайта на сервере">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <div class="section-label">О нас</div>
+          <h2>Простой путь к работающему сайту</h2>
+          <p>
+            KS-3-24-M-A Studio - учебный проект веб-студии. Мы разрабатываем сайты,
+            проверяем их на компьютере и телефоне, а затем публикуем на хостинге
+            или через GitHub Pages.
+          </p>
+          <p>
+            Основная задача - сделать понятный, аккуратный и доступный сайт,
+            который можно открыть по обычной ссылке из интернета.
+          </p>
+        </div>
+
+        <div class="mini-card">
+          <img src="images/development.svg" alt="Разработка сайта">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">Услуги</div>
+          <h2>Основные направления</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="images/development.svg" alt="Разработка сайта">
+            <h3>Разработка сайта</h3>
+            <p>HTML, CSS, JavaScript, адаптивность и базовая интерактивность.</p>
+          </article>
+
+          <article class="service-card">
+            <img src="images/hosting.svg" alt="Размещение сайта">
+            <h3>Размещение сайта</h3>
+            <p>Публикация на хостинге или GitHub Pages и проверка рабочей ссылки.</p>
+          </article>
+
+          <article class="service-card">
+            <img src="images/support.svg" alt="Поддержка сайта">
+            <h3>Поддержка</h3>
+            <p>Исправление ошибок, обновление контента и небольшие доработки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-label">Контакты</div>
+          <h2>Оставить заявку</h2>
+          <p class="muted">
+            Форма учебная и показывает работу JavaScript.
+          </p>
+
+          <div class="contact-list">
+            <div><span>Email</span><strong>project.tester@mail.ru</strong></div>
+            <div><span>Телефон</span><strong>+996 123 456 789</strong></div>
+            <div><span>Город</span><strong>Бишкек, проспект Чуй 255.</strong></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="name@example.com" required>
+          </label>
+          <label>
+            Сообщение
+            <textarea name="message" rows="5" placeholder="Что необходимо сделать?" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 KS-3-24-M-A Studio</span>
+      <span>Учебный проект</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
